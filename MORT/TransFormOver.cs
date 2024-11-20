@@ -105,7 +105,7 @@ namespace MORT
 
         #endregion
 
-        public static bool isActiveGDI = false;
+        public static bool isActiveGDI = true;
 
 
         string resultText = "MORT 1.161V\n레이어 번역창";

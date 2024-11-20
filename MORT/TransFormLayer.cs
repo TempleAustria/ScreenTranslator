@@ -107,7 +107,7 @@ namespace MORT
 
         #endregion
 
-        public static bool isActiveGDI = false;
+        public static bool isActiveGDI = true;
 
         string resultText = "MORT 1.18dV\n레이어 번역창";
         byte alpha = 150;
@@ -290,7 +290,7 @@ namespace MORT
             InitializeComponent();
             resultText = Properties.Settings.Default.LAYER_TEXT;
             resultText = string.Format(resultText, Properties.Settings.Default.MORT_VERSION);
-            resultText = resultText;
+            resultText = resultText + "\n\n[TIP]" + Util.GetToolTip();
             Init();
             LocalizeForm();
         }
